@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html {
+  background-color: #4ABDAC;
+  font-family: 'Roboto', sans-serif;
+}
+ol, ul {
+  padding-left: 30px;
+}
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.status {
+  margin-bottom: 10px;
+}
+.square {
+  background: #FC4A1A;
+  color: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 100px;
+  height: 100px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+}
+.square:focus {
+  outline: none;
+}
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+.game {
+  display: flex;
+}
+.game-board {
+  margin-left: auto;
+  margin-right: auto;
+}
+.game-info {
+  margin-top: 40px;
+  margin-left: 10%;
+  position: absolute;
+}
+
+@media screen and (max-width: 1000px) {
+  .game-info {
+    margin-top: 400px;
+  }
+}
